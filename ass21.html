@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: rgb(254, 252, 149);
+      width: 80%;
+      border: 1px solid black;
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .mobile-logo {
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+
+    .logo-heading {
+      text-align: center;
+    }
+
+    .bill-header {
+        text-align: center;
+      color: rgb(28, 24, 18);
+      border: 1px solid black;
+
+    }
+
+    .shop-address {
+      text-align: end;
+
+    }
+
+    .contact {
+      text-align: end;
+      border-bottom: 1px solid black;
+      
+    }
+    .book-logo{
+    width: 100px;
+
+   }
+    .bill-body {
+      position: relative;
+    }
+
+    .bill-title {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .bill-detail-key {
+      color: rgb(49, 97, 3);
+      width: 30%;
+
+    }
+
+    .bill-detail-value {
+      font-weight: bold;
+      border-bottom: 1px solid black;
+      width: 30%;
+    }
+
+    .bill-detail {
+      display: flex;
+      justify-content: space-around;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .accountant {
+      text-align: end;
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 20px;
+      margin-bottom: 50px;
+      margin-top: 70px;
+    }
+
+    .stamp-img {
+      width: 100px;
+      position: relative;
+      bottom: -60px;
+      left: 80%;
+      transform: rotate(-20deg);
+    }
+
+    .bill-footer {
+      text-align: center;
+      color: rgb(33, 31, 37);
+      border-top: 1px solid;
+    }
+
+    /* Small Devices */
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+      }
+   
+   
+    .stamp-img {
+      position: absolute;
+      left: 70%;
+     
+    }
+    }
+
+    /* Normal Devices */
+    @media screen and (min-width: 601px) and (max-width: 768px) {
+      .container {
+        width: 60%;
+      }
+      .stamp-sign{
+        width: 150px;
+      position: absolute
+bottom: -30ps;
+right: 0;
+transition: rotate(-20deg);
+    }
+    .stamp-img {
+      position: absolute;
+      left: 60%;
+      width: 120px;
+     
+    }
+  }
+
+    /* Tablets Devices */
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+      .container {
+        width: 60%;
+      }
+      .stamp-img {
+      position: absolute;
+      left: 70%;
+     
+    }
+  }
+
+    /* Large Devices */
+    @media screen and (min-width: 993px) and (max-width: 1200px) {}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="bill-header">
+      <img src="C:\Users\vaish\OneDrive\Desktop\icp-8.0\book12.jpeg" class="book-logo">
+      <h2 class="logo-heading">VS Books </h2>
+      <p class="shop-address"> 413-712 Shirdi <br>
+        Rahata road </p>
+      <p class="contact">+91 7567897665</p>
+
+    </div>
+
+
+
+    <div class="bill-body">
+      <h3 class="bill-title">Payment Receipt</h3>
+      <div class="bill-detail">
+        <div class="bill-detail-key">
+          Receipt No.
+        </div>
+        <div class="bill-detail-value">
+          123456789
+        </div>
+
+      </div>
+
+      <div class="bill-detail">
+        <div class="bill-detail-key">
+          Paymet Date :
+        </div>
+        <div class="bill-detail-value">
+          14-jun-2024
+        </div>
+
+      </div>
+
+      <div class="bill-detail">
+        <div class="bill-detail-key">
+          Amount :
+        </div>
+        <div class="bill-detail-value">
+          1000/-
+        </div>
+
+      </div>
+
+      <div class="bill-detail">
+        <div class="bill-detail-key">
+          Payment Mode :
+        </div>
+        <div class="bill-detail-value">
+          Online
+        </div>
+
+      </div>
+      <div class="stamp-sign">
+      <img src=C:\Users\vaish\OneDrive\Desktop\icp-8.0\paid-stamp.avif class="stamp-img">
+      <p class="accountant">Accountant Signature</p>
+    </div>
+    </div>
+
+
+
+    <div class="bill-footer">
+      <h2>Thank you for Payment visit again</h2>
+
+    </div>
+  </div>
+</body>
+
+</html>
